@@ -1,0 +1,78 @@
+\documentclass[12pt,oneside,english]{amsart}
+
+% PACKAGES
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1.8cm,bmargin=1.8cm,lmargin=1.8cm,rmargin=1.8cm}
+%\geometry{verbose,tmargin=1.8cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{systeme}
+%\usepackage{enumerate} %(use this package instead of the one below to eliminate the indentation on item in enumerate environments)
+\usepackage[shortlabels]{enumitem}
+\usepackage{color}
+\usepackage{framed}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+\makeatletter
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\usepackage{geometry}
+
+\makeatother
+\newtheorem{problem}{Problem}
+
+
+%%%%%%%%%% Handy commands:
+
+% Solution environment
+\newenvironment{solution}{\begin{framed}\noindent\textbf{Solution.}}{\end{framed}}
+
+% abbreviations
+\newcommand{\rref}{\operatorname{rref}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\mat}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+\newcommand{\lv}{\langle}
+\newcommand{\rv}{\rangle}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\im}{\operatorname{im}}
+
+% augmented matrix macro (enter number of columns before bar)
+\newenvironment{amatrix}[1]{%
+  \left[\begin{array}{@{}*{#1}{c}|c@{}}
+}{%
+  \end{array} \right]
+}
+
+% augmented matrix macro (enter number of columns before bar
+% and after)
+\newenvironment{imatrix}[2]{%
+  \left[\begin{array}{@{}*{#1}{c}|*{#2}{c}@{}}
+}{%
+  \end{array} \right]
+}
+\title{
+Math 412 - Introduction to Modern Algebra \\
+TODO: Homework N\\
+TODO: Name}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem 1.\label{sec:problem1.}}
+\begin{enumerate}[(a)]
+      \item
+\end{enumerate}
+
+\end{document}
+
